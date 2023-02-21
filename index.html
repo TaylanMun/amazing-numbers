@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazing Numbers</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+  <div class="container mt-5 mb-5">
+    <div class="row gy-3">
+      <div class="col-md-6 offset-md-4">
+        Welcome to Amazing Numbers!
+      </div>
+      <div class="col-md-6 offset-md-4">
+          Supported requests:
+          </br>
+          - enter a natural number to know its properties;
+          </br>
+          - enter two natural numbers to obtain the properties of the list:
+          </br>
+          &nbsp;&nbsp;&nbsp;* the first parameter represents a starting number;
+          </br>
+          &nbsp;&nbsp;&nbsp;* the second parameter shows how many consecutive numbers are to be printed;
+          </br>
+          - two natural numbers and a property to search for;
+          </br>
+          - two natural numbers and two properties to search for;
+          </br>
+          - separate the parameters with one space;
+          </br>
+          - enter 0 to exit.
+      </div>
+      <div class="col-md-4 offset-md-4">
+          <div class="form-group">
+            <input type="text" class="form-control" id="amazingNumbers" required placeholder="Enter a request:">
+            <div class="invalid-feedback"></div>
+          </div>
+          <button id="submitBtn" class="btn btn-primary mt-2">Submit</button>
+      </div>
+      <div class="col-md-6 offset-md-4 result">
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
