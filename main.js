@@ -68,13 +68,13 @@ document.addEventListener('DOMContentLoaded', function () {
       odd: "-odd,even",
       '-odd': "-even,odd",
       square: "-square,sunny",
-      '-square': "-sunny,square",
+      '-square': "square",
       sunny: "-sunny,square",
-      '-sunny': "-square,sunny",
+      '-sunny': "sunny",
       duck: "-duck,spy",
-      '-duck': "-spy,duck",
+      '-duck': "duck",
       spy: "-spy,duck",
-      '-spy': "-duck,spy",
+      '-spy': "spy",
       happy: "-happy, sad", 
       '-happy': "-sad, happy", 
       sad: "-sad,happy",
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
           if(properties.includes(propertyImpossible[0])){
             foundErrorString = `${properties[index]}, ${propertyImpossible[0]}`
           }
-          if(properties.includes(propertyImpossible[1])){
+          if(1 in propertyImpossible && properties.includes(propertyImpossible[1])){
             foundErrorString = `${properties[index]}, ${propertyImpossible[1]}`
           }
         }
